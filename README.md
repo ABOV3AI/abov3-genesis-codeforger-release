@@ -29,6 +29,60 @@ Realtime test-run feedback, automated patch proposals, and safe refactors with u
 
 Out-of-the-box adapters for editors, CI systems, cloud providers, and VCS workflows.
 
+### AI Providers
+
+ABOV3 supports **50+ AI providers** out-of-the-box:
+
+- **Anthropic**: Claude 3 family (Opus, Sonnet, Haiku)
+- **OpenAI**: GPT-4, GPT-4 Turbo, GPT-3.5-turbo
+- **Google**: Gemini Pro, Gemini Flash
+- **Local Models**: Ollama with continuous monitoring
+- **Hugging Face**: Open-source models
+- **Together AI**: Fast inference
+- **Mistral**: Mistral models
+- **Groq**: Ultra-fast inference
+- **Custom Providers**: API-compatible backends
+
+**Features:**
+- Automatic provider detection from environment variables
+- OAuth flow for supported providers (Anthropic, Google)
+- API key management and validation
+- Model auto-discovery and caching
+- Fallback provider selection
+
+### Ollama Continuous Monitoring
+
+Real-time local model detection:
+- **30-second polling** for model changes
+- **Auto-discovery**: Models appear when Ollama starts
+- **Real-time removal**: Models disappear when Ollama stops
+- **No phantom models**: Only shows actually available models
+- **Background compatible**: Works with `ollama serve` and background instances
+- **Zero configuration**: Automatic endpoint detection
+
+### Session Management
+
+Complete conversation session system:
+- **Session creation and persistence**
+- **Multi-turn conversations** with full history
+- **Session listing and switching**
+- **Session export** to JSON/Markdown
+- **Session sharing** (cloud and local)
+- **Session recovery** from backups
+- **Context compaction** for large sessions
+- **Child sessions** for branching conversations
+
+### Local Network Sharing
+
+Peer programming without cloud dependency:
+- **LAN-based sharing**: Sessions shared within local networks
+- **Secret-based authentication**: Each share has unique secret
+- **Real-time collaboration**: Multiple developers per session
+- **Read-only & write modes**: Permission control
+- **Peer management**: View connected collaborators
+- **Auto-discovery**: Peers can discover shared sessions
+
+
 ### Links
 
 [Documentation](./docs/DocumentationRoot.md)

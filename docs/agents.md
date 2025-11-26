@@ -236,7 +236,10 @@ Using Agents
 # Create new agent interactively
 ./abov3-linux-x64 agent create
 ```
+### SAMPLE JAVA JPA AGENT
 
+A detailed example of a Java JPA Agent
+[JAVA JPA AGENT](./javadevelopment.md)
 
 ###  Agent Selection Strategy
 

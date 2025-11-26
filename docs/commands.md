@@ -147,7 +147,6 @@ $ARGUMENTS
 Ensure all tests pass before deployment.
 ```
 
-
 ### /security
 
 ```
@@ -303,6 +302,7 @@ Command Discovery
 *   Type `/` to see all available commands
 *   Use `/help` to see command descriptions
 *   Tab completion works for command names
+*   Use `/about` to view version, build, and homepage link
 
 ### Command Locations
 
