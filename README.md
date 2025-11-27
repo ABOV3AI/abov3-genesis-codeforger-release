@@ -9,8 +9,10 @@ The origin of a new coding era. An intelligent, multi‑agent coding partner tha
 *   Secure deployable connectors
 *   IDE & CI integrations
 
-<img src="./images/CodeForagerIntro.png" alt="ABOV3 Terminal Interface example"
+<img src="./images/CodeForgerIntro.png" alt="ABOV3 Terminal Interface example"
     style="height: 300px; width: 500px;"/>
+
+Brought to you by [ABOVE](http://www.abov3.com), CodeForger can be used free of charge - see [LICENSE](./LICENSE) for full license details.  The product is currently in BETA testing. Report bugs to codeforger@abov3.com.  
 
 What ABOV3: Genesis CodeForger can do
 -------------------------------------
