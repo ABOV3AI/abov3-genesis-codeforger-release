@@ -1,4 +1,5 @@
-![ABOV3 LOGO](./images/ABOV3_logo_transparent.png)
+<img src="./images/ABOV3_logo_transparent.png" alt="ABOV3" style="width:500px; height: 150px;"/>
+
 
 # ABOV3: Genesis CodeForger
 The origin of a new coding era. An intelligent, multi‑agent coding partner that thinks in systems, not snippets — orchestrating teams of specialized AI agents, mastering deep code comprehension, and delivering rapid, iterative builds. From concept to deployment, it forges production‑ready solutions with the precision, speed, and adaptability you expect from the next generation of AI engineering.
@@ -8,26 +9,18 @@ The origin of a new coding era. An intelligent, multi‑agent coding partner tha
 *   Secure deployable connectors
 *   IDE & CI integrations
 
-![ABOV3 Terminal Interface](assets/abov3_ss.png)
+<img src="./images/CodeForagerIntro.png" alt="ABOV3 Terminal Interface example"
+    style="height: 300px; width: 500px;"/>
 
 What ABOV3: Genesis CodeForger can do
 -------------------------------------
 
-### AI Code Generation
-
-From prototypes to production-ready modules. Context-aware suggestions, idiomatic code, and multi-file scaffolding.
-
-### Multi-Agent Orchestration
-
-Chain specialized agents for analysis, testing, and refactor — orchestrated to solve complex engineering tasks.
-
-### Live Debug & Fix
-
-Realtime test-run feedback, automated patch proposals, and safe refactors with undo/redo support.
-
-### Integrations
-
-Out-of-the-box adapters for editors, CI systems, cloud providers, and VCS workflows.
+| Feature | Description |
+|---------|-------------|
+| AI Code Generation |  From prototypes to production-ready modules. Context-aware suggestions, idiomatic code, and multi-file scaffolding. |
+| Multi-Agent Orchestration | Chain specialized agents for analysis, testing, and refactor — orchestrated to solve complex engineering tasks. |
+| Live Debug & Fix | Realtime test-run feedback, automated patch proposals, and safe refactors with undo/redo support.  Project can connect to local data and services during development. |
+| Integrations | Out-of-the-box adapters for editors, CI systems, cloud providers, and VCS workflows. |
 
 ### AI Providers
 
@@ -83,8 +76,6 @@ Peer programming without cloud dependency:
 - **Auto-discovery**: Peers can discover shared sessions
 
 
-### Links
-
 [Documentation](./docs/DocumentationRoot.md)
 
 #### Getting Started
@@ -101,6 +92,8 @@ Peer programming without cloud dependency:
 
 #### Advanced
 
+  - [Design Principles](./docs/designprinciples.md)
+  - [CLI Commands](./docs/cli.md)
   - [Agents](./docs/agents.md)
   - [Custom Commands](./docs/commands.md)
   - [Keybindings](./docs/keybindings.md)

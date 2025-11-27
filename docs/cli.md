@@ -4,25 +4,62 @@ Command Line Interface (CLI)
 
 ABOV3's powerful command-line interface for automation, scripting, and headless operation.
 
-Quick Start
------------
+```
+█▀▀█ █▀▀▄ █▀▀█ █  █ ▀▀█ █▀▀█ ▀█▀
+█▄▄█ █▀▀▄ █░░█ █  █ ▀▀█ █▄▄█ ░█░
+▀  ▀ ▀▀▀  ▀▀▀▀  ▀▀  ▀▀▀ ▀  ▀ ▄█▄
+```
+
+** Commands:
+| Command    | Descripton |
+|------------|------------|
+| abov3 [project] | start abov3 tui   [default] |
+| abov3 run [message..] | run abov3 with a message.  Example: `abov3 run "Explain async/await in JavaScript"` |
+| abov3 auth | manage credentials |
+| abov3 config | manage ABOV3 configuration |
+| abov3 agent  | manage agents |
+| abov3 upgrade [target] | upgrade abov3 to the latest or a specific version |
+| abov3 serve | starts a headless abov3 server |
+| abov3 models | list all available models |
+| abov3 export [sessionID] | export session data as JSON |
+| abov3 github | manage GitHub agent |
+| abov3 prompts | manage named prompts |
+| abov3 prompts:add | add a new named prompt |
+| abov3 prompts:list | list all named prompts |
+| abov3 prompts:use <name> | use a named prompt (sends it to the LLM) |
+| abov3 list-prompts | list all named prompts |
+| abov3 recover-context | recover compressed context from backups |
+| abov3 prompts:add | add a new named prompt |
+| abov3 prompts:list | list all named prompts |
+| abov3 prompts:use <name> | use a named prompt (sends it to the LLM) |
+| abov3 list-prompts | list all named prompts |
+| abov3 recover-context | recover compressed context from backups |
 
 ```
-# Show help and available commands
-abov3 --help
+Options:
+      --help        show help                                          [boolean]
+  -v, --version     show version number                                [boolean]
+      --print-logs  print logs to stderr                               [boolean]
+      --log-level   log level
+                            [string] [choices: "DEBUG", "INFO", "WARN", "ERROR"]
+  -m, --model       model to use in the format of provider/model        [string]
+  -c, --continue    continue the last session                          [boolean]
+  -s, --session     session id to continue                              [string]
+  -p, --prompt      prompt to use                                       [string]
+      --agent       agent to use                                        [string]
+      --port        port to listen on                      [number] [default: 0]
+  -h, --hostname    hostname to listen on        [string] [default: "127.0.0.1"]
+```
 
-# Start TUI (Terminal User Interface)
-abov3
+Linux:
+`~/.cache/abov3/bin/abov3-cli {opts}`
 
-# Run a single prompt
-abov3 run "Explain async/await in JavaScript"
 
 # Continue last session
-abov3 --continue
-```
+`abov3 --continue`
 
 
- Self-Management Commands (New in v0.1.8)
+ Self-Management Commands
 -------------------------------------------
 
 ABOV3 includes built-in commands to manage its own installation. All functionality is compiled into the single binary - no external scripts needed!
@@ -68,23 +105,29 @@ abov3 update
 #### Example Output:
 
 ```
- Checking for updates...
+🚀 Installing ABOV3 Genesis CodeForger...
 
- Current version: 0.1.7
- Latest version:  0.1.8
+📦 Installing to: C:\Users\russe\AppData\Local\Programs\ABOV3\abov3.exe
+✓ Binary installed
+📦 Extracting embedded CLI...
+Updating embedded CLI: XXXXXXX\AppData\Local\abov3\bin\abov3-cli.exe
+Embedded CLI extracted successfully: XXXXXXX\AppData\Local\abov3\bin\abov3-cli.exe (size: 129467904)
+✓ CLI extracted to: XXXXXXX\AppData\Local\abov3\bin\abov3-cli.exe
+✓ Already in PATH
 
- What's new:
-──────────────────────────────────────────────────
-- Self-management commands
-- Ollama continuous monitoring
-- Windows connection fixes
+✨ Installation complete!
 
-Proceed with update? (Y/n): y
-⬇️  Downloading abov3.exe (143.00 MB)...
-✓ Download complete
-✓ Update installed
+🎯 Quick start:
+   1. Run: abov3
+   2. Start chatting with AI!
 
-✨ Successfully updated to version 0.1.8
+📚 Common commands:
+   abov3 auth login   - Authenticate with providers
+   abov3 models       - List available AI models
+   abov3 update       - Update to latest version
+   abov3 uninstall    - Remove installation
+
+📍 Installed to: XXXXXXX\AppData\Local\Programs\ABOV3\abov3.exe
 ```
 
 
@@ -156,6 +199,8 @@ abov3 auth logout
 
 ABOV3 supports OAuth login for Anthropic Claude Pro/Max accounts. Run `auth login` to authenticate with your Claude account.
 
+[Example](example_auth.md)
+
 ### abov3 serve
 
 Start a headless ABOV3 server. Useful for running ABOV3 as a backend service.
@@ -198,7 +243,7 @@ Manage ABOV3 configuration settings.
 
 ```
 # Open configuration menu
-./abov3-linux-x64 config
+above config
 
 # Configuration is stored in:
 # ~/.config/abov3/abov3.json
@@ -211,7 +256,7 @@ Manage AI agents (Build, Plan, General, and custom agents).
 
 ```
 # Manage agents
-./abov3-linux-x64 agent
+abov3-cli agent
 
 # Agents are configured in:
 # ~/.config/abov3/agent/
@@ -224,10 +269,10 @@ Export session data as JSON for backup or analysis.
 
 ```
 # Export current session
-./abov3-linux-x64 export
+abov3-cli export
 
 # Export specific session
-./abov3-linux-x64 export session_12345
+abov3-cli export session_12345
 ```
 
 
@@ -237,10 +282,10 @@ Upgrade ABOV3 to the latest version or a specific version.
 
 ```
 # Upgrade to latest
-./abov3-linux-x64 upgrade
+abov3-cli upgrade
 
 # Upgrade to specific version
-./abov3-linux-x64 upgrade v1.2.3
+abov3-cli upgrade v1.2.3
 ```
 
 
@@ -270,10 +315,10 @@ Common Workflows
 
 ```
 # Generate a Python function
-./abov3-linux-x64 run "Create a Python function to parse CSV files"
+abov3-cli run "Create a Python function to parse CSV files"
 
 # Generate with specific model
-./abov3-linux-x64 run -m ollama/qwen2.5-coder:14b "Create a REST API"
+abov3-cli run -m ollama/qwen2.5-coder:14b "Create a REST API"
 ```
 
 
@@ -281,13 +326,13 @@ Common Workflows
 
 ```
 # Start a new session with a specific model
-./abov3-linux-x64 -m anthropic/claude-3-sonnet
+abov3-cli -m anthropic/claude-3-sonnet
 
 # Continue your last session
-./abov3-linux-x64 --continue
+abov3-cli --continue
 
 # Continue a specific session
-./abov3-linux-x64 --session session_20240315_142350
+abov3-cli --session session_20240315_142350
 ```
 
 
@@ -298,10 +343,10 @@ Common Workflows
 ollama serve
 
 # List available models (including Ollama)
-./abov3-linux-x64 models
+abov3-cli models
 
 # Use a local Ollama model
-./abov3-linux-x64 run -m ollama/mistral:7b "Explain closures"
+abov3-cli run -m ollama/mistral:7b "Explain closures"
 ```
 
 
@@ -309,13 +354,13 @@ ollama serve
 
 ```
 # Enable debug logging
-./abov3-linux-x64 --log-level DEBUG --print-logs
+./abov3 --log-level DEBUG --print-logs
 
 # Check provider authentication
-./abov3-linux-x64 auth list
+./abov3 auth list
 
 # Test with a simple prompt
-./abov3-linux-x64 run --print-logs "Hello, are you working?"
+./abov3 run --print-logs "Hello, are you working?"
 ```
 
 
