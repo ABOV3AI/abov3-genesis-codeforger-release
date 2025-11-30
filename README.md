@@ -14,6 +14,10 @@ The origin of a new coding era. An intelligent, multi‑agent coding partner tha
 
 Brought to you by [ABOVE](http://www.abov3.com), CodeForger can be used free of charge - see [LICENSE](./LICENSE) for full license details.  The product is currently in BETA testing. Report bugs to codeforger@abov3.com.  
 
+History
+-------------------------------------
+CodeForager was the first Abov3 in-house agentic coding solution (yes, we drink our own koolaid (tm)).  The Enterprise project has so many features it looks crude by comparison, but we preserved CodeForger as an entry-level agentic coding platform for hobbyists and developers.  There are several agentic coding platforms available but they usually lock you into a particular architecture, or only work online.  CodeForger is AI-provider agnostic and sets you free from a particular provider, and it runs conveniently on a terminal on your PC.  For more information on our enterprise solutions like Exodus, go to the [ABOV3](https://www.abov3.com) website.
+
 What ABOV3: Genesis CodeForger can do
 -------------------------------------
 
@@ -77,6 +81,10 @@ Peer programming without cloud dependency:
 - **Peer management**: View connected collaborators
 - **Auto-discovery**: Peers can discover shared sessions
 
+### Some Fun
+Hobbyist features like:
+ - Support for [Arduino Development](./docs/arduino.md)
+ - Support for [Java/Java Spring/Maven](./docs/javadevelopment.md)
 
 [Documentation](./docs/DocumentationRoot.md)
 
