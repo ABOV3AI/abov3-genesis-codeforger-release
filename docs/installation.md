@@ -5,8 +5,8 @@ Get ABOV3: Genesis CodeForger v0.1.8 running on your system in minutes.
 
 Download just **one file** - the binary contains everything including built-in install/update/uninstall commands. No additional scripts needed!
 
-Download Pre-built Binaries
----------------------------
+[Download Pre-built Binaries](https://github.com/ABOV3AI/abov3-genesis-codeforger-release/releases/latest_release)
+
 
 ⚡ Self-Install Method (Recommended)
 -----------------------------------
@@ -82,7 +82,7 @@ Updates use atomic binary replacement with automatic rollback if anything goes w
 Manual Installation (Alternative)
 ---------------------------------
 
-###  Linux Manual Installation
+### Linux Manual Installation
 
 #### Manual PATH Setup
 

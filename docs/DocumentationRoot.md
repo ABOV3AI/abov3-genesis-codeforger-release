@@ -3,29 +3,42 @@
 
 Everything you need to know about installing, configuring, and using ABOV3
 
-###  New in v0.1.10
-
-*   **Named Prompts** - Create and use named prompts for prompt re-use
-*   **Ollama Continuous Monitoring** - 30-second polling for automatic model discovery
-*   **Enhanced Windows Support** - Fixed connection issues and improved stability
-*   **SDK Updates** - Go v0.14.0, JavaScript v1.1.0, Python v0.1.11
-
 [→ Get started](installation.md)
 
 ![ABOV3 Terminal Interface](../images/CodeForagerIntro.png)
 
 Getting Started
 ---------------
+  - [Installation - Windows](./installation.md#windows)
+  - [Installation - Linux](./installation.md#linux--macos)
+  - [Installation - Mac](./installation.md#linux--macos)
 
-Usage Guides
-------------
+#### Getting Started
 
-Advanced Configuration
-----------------------
+  - [Installation](./docs/installation.md)
+  - [Configuration](./docs/configuration.md)
+  - [Provders](./docs/providers.md)
+
+#### Usage Guides
+
+  - [Terminal TUI](./docs/tui.md)
+  - [Command-Line](./docs/cli.md)
+  - [Ollama Local Models](./docs/ollama.md)
+
+#### Advanced
+
+  - [Design Principles](./docs/designprinciples.md)
+  - [CLI Commands](./docs/cli.md)
+  - [Agents](./docs/agents.md)
+  - [Custom Commands](./docs/commands.md)
+  - [Keybindings](./docs/keybindings.md)
+  - [Models](./docs/models.md)
+  - [Java JDK](./javadevelopment.md#java-configuration)
+  - [Named Prompts](./namedprompts.md#prompt-management)
 
 ### Quick Links
 
-*    [Configuration Schema (config.json)](./config.json)
-*    [Anthropic OAuth Setup](about:blank/providers.md)
-*    [Local Models with Ollama](ollama.md)
-*    [Troubleshooting](troubleshooting.md)
+*   [Configuration Schema (config.json)](./config.json)
+*   [Anthropic OAuth Setup](about:blank/providers.md)
+*   [Local Models with Ollama](ollama.md)
+*   [Troubleshooting](troubleshooting.md)
